@@ -1,0 +1,22 @@
+.copyright {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #292c36;
+        padding: 44px 0 32px 0;
+    }
+    &__title, 
+    &__subtitle {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 32px;
+    }
+    &__subtitle {
+        font-size: 16px;
+    }
+}
