@@ -410,7 +410,7 @@ img {
   padding: 60px 0;
 }
 .contact__container {
-  padding: 78px 274px;
+  padding: 78px 0;
   width: calc(100% - 460px);
   display: flex;
   flex-direction: column;
