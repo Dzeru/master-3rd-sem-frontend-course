@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    width: 100%;
+    &__container {
+        position: relative;
+        max-width: 1440px;
+        padding: 20px 168px;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: flex;
+        width: 32px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    &__link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #C5D2DC;
+        transition: 0.3s transform;
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    &__button {
+        transition: 0.3s transform;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}

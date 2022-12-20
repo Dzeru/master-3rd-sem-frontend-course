@@ -1,0 +1,96 @@
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__container {
+        max-width: 1104px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__header {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    &-item {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        padding: 24px 24px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $highlight-background;
+        &:not(:last-child) {
+            margin-right: 64px;
+        }
+        &__description {
+            padding-bottom: 24px;
+            padding-top: 24px;
+            border-bottom: 1px solid #33363A;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: left;
+        }
+        &__sign {
+            padding-top: 24px;
+            &__name, &__slash, &__company {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__name {
+                color: $title-text-color;
+            }
+            &__slash {
+                color: #33363A;
+            }
+            &__company {
+                color: $bright-color;
+            }
+        }
+        &__img {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 100%;
+            border-radius: 50%;
+            & > img {
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 64px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

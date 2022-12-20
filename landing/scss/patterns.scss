@@ -1,0 +1,23 @@
+.patterns {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+    &__container {
+        position: relative;
+    }
+    &__top {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 400px;
+        height: 300px;
+    }
+    &__bottom {
+        position: absolute;
+        left: 83px;
+        top: 530px;
+        width: 563px;
+        height: 552px;
+    }
+}

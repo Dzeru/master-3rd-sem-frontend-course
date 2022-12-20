@@ -1,0 +1,75 @@
+@import "_mixins";
+@import "fonts";
+
+$dark-background: #151719;
+$highlight-background: #25282C;
+$bright-color: #5D5DFF;
+$list-color: #48BB78;
+$title-text-color: #D9E3EA;
+$common-text-color: #9BA9B4;
+
+*,
+*::before,
+*::after {
+    font-family: Inter;
+    line-height: 1.5;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header, section, footer {
+    position: relative;
+    z-index: 2;
+    background-color: $dark-background;
+    color: $common-text-color;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: $title-text-color;
+}
+
+li {
+    list-style-image: url("../images/galochka-ti-shchas-upadesh.svg") 
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1104px;
+    padding: 0 0;
+    margin: 0 auto;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 2%;
+    color: #fff;
+    padding: 12px 32px;
+    background-color: $bright-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+[data-mask] {
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    transition: 0.3s background;
+}

@@ -1,0 +1,113 @@
+.menu {
+    &__container {
+        max-width: 1104px;
+        padding-bottom: 64px;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+    &__column {
+        &__description {
+            display: flex;
+            flex-direction: column;
+            margin-right: 15%;
+            max-width: 30%;
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 0;
+        }
+    }
+    &__logo {
+        display: flex;
+        width: 32px;
+        margin-bottom: 14px;
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__links {
+        &__column {
+            display: flex;
+            flex-direction: column;
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+        }
+        &__link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $common-text-color;
+            margin-bottom: 4px;
+        }
+        &__header {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: $title-text-color;
+        }
+    }
+    &__copyright {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: $highlight-background;
+            border-radius: 50%;
+            transition: 0.3s transform;
+            &:hover {
+                transform: translateZ(10px);
+            }
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+            &--facebook {
+                & > img {
+                    width: 8px;
+                }
+            }
+            &--instagram {
+                & > img {
+                    width: 12px;
+                }
+            }
+            &--github {
+                & > img {
+                    width: 13px;
+                }
+            }
+            &--linkedin {
+                & > img {
+                    width: 12px;
+                }
+            }
+            &--twitter {
+                & > img {
+                    width: 11px;
+                }
+            }
+        }
+    }
+}

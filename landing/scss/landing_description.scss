@@ -1,0 +1,61 @@
+.landing_description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 1024px;
+        margin-left: 208px;
+        margin-right: 195px;
+        margin-bottom: 64px;
+    }
+    &__row {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__main {
+        max-width: 768px;
+    }
+    &__video {
+        max-width: 1024px;
+        margin-top: 60px;
+        margin-bottom: 64px;
+        z-index: 3;
+    }
+    &__pattern {
+        z-index: 1;
+        position: absolute;
+        left: -125px;
+        bottom: -64px;
+        width: 563px;
+        height: 552px;
+    }
+    &__sign_up {
+        &__button_pale {
+            background-color: #33363A;
+            margin-left: 12px;
+        }
+    }
+    &__description {
+        margin-bottom: 32px;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 62px;
+        text-align: center;
+    }
+}
